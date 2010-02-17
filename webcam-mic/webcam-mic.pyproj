@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52e5586a-4b0f-436c-ab28-1515adc4e008}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>index.html</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <AssemblyName>webcam-mic</AssemblyName>
+    <Name>webcam-mic</Name>
+    <RootNamespace>webcam-mic</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="C:\dev\pycon2010\webcam-mic\.webcam-mic.xaml.swp" />
+    <None Include="C:\dev\pycon2010\webcam-mic\app.xaml" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Chiron.exe" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Chiron.exe.config" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Chiron.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\dlr.js" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\dlr.xap" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\IronPython.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\IronPython.Modules.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\IronPython.Modules.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\IronPython.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\IronPython.slvx" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\IronRuby.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\IronRuby.Libraries.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\IronRuby.Libraries.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\IronRuby.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\IronRuby.slvx" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib\iptest" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib\iptest\assert_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib\iptest\cominterop_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib\iptest\console_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib\iptest\file_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib\iptest\misc_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib\iptest\process_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib\iptest\runner.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib\iptest\test_env.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib\iptest\type_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib\iptest\util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib\iptest\warning_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib\iptest\__init__.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib\runpy.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib\site.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Lib\__future__.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Microsoft.Dynamic.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Microsoft.Dynamic.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Microsoft.Scripting.Debugging.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Microsoft.Scripting.Debugging.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Microsoft.Scripting.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Microsoft.Scripting.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Microsoft.Scripting.Silverlight.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Microsoft.Scripting.Silverlight.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Microsoft.Scripting.slvx" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\Microsoft.Scripting.xml" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\mscorlib.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\System.Core.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\System.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\System.Net.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\bin\System.Numerics.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Chiron.exe" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Chiron.exe" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Chiron.exe.config" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Chiron.exe.config" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Chiron.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Chiron.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\dlr.js" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\dlr.js" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\dlr.xap" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\dlr.xap" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronPython.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronPython.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronPython.Modules.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronPython.Modules.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronPython.Modules.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronPython.Modules.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronPython.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronPython.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronPython.slvx" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronPython.slvx" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronRuby.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronRuby.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronRuby.Libraries.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronRuby.Libraries.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronRuby.Libraries.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronRuby.Libraries.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronRuby.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronRuby.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronRuby.slvx" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\IronRuby.slvx" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\assert_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\assert_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\cominterop_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\cominterop_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\console_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\console_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\file_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\file_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\misc_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\misc_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\process_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\process_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\runner.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\runner.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\test_env.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\test_env.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\type_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\type_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\warning_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\warning_util.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\__init__.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\iptest\__init__.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\runpy.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\runpy.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\site.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\site.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\__future__.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Lib\__future__.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Dynamic.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Dynamic.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Dynamic.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Dynamic.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.Debugging.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.Debugging.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.Debugging.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.Debugging.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.Silverlight.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.Silverlight.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.Silverlight.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.Silverlight.pdb" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.slvx" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.slvx" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.xml" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.xml" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\mscorlib.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\mscorlib.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\System.Core.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\System.Core.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\System.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\System.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\System.Net.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\System.Net.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\System.Numerics.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\dlr\System.Numerics.dll" />
+    <None Include="C:\dev\pycon2010\webcam-mic\index.html" />
+    <None Include="C:\dev\pycon2010\webcam-mic\repl.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\repl.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\webcam-mic.sln" />
+    <None Include="C:\dev\pycon2010\webcam-mic\webcam-mic.sln" />
+    <None Include="C:\dev\pycon2010\webcam-mic\webcam-mic.sln" />
+    <None Include="C:\dev\pycon2010\webcam-mic\webcam-mic.suo" />
+    <None Include="C:\dev\pycon2010\webcam-mic\webcam-mic.suo" />
+    <None Include="C:\dev\pycon2010\webcam-mic\webcam-mic.suo" />
+    <None Include="C:\dev\pycon2010\webcam-mic\webcam-mic.xaml" />
+    <None Include="C:\dev\pycon2010\webcam-mic\webcam-mic.xaml" />
+    <None Include="C:\dev\pycon2010\webcam-mic\webcam-mic.xaml" />
+    <None Include="C:\dev\pycon2010\webcam-mic\webcam_mic.html" />
+    <None Include="C:\dev\pycon2010\webcam-mic\webcam_mic.html" />
+    <None Include="C:\dev\pycon2010\webcam-mic\webcam_mic.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\webcam_mic.py" />
+    <None Include="C:\dev\pycon2010\webcam-mic\webcam_mic.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Chiron.exe" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Chiron.exe.config" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Chiron.pdb" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\dlr.js" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\dlr.xap" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\IronPython.dll" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\IronPython.Modules.dll" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\IronPython.Modules.pdb" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\IronPython.pdb" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\IronPython.slvx" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\IronRuby.dll" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\IronRuby.Libraries.dll" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\IronRuby.Libraries.pdb" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\IronRuby.pdb" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\IronRuby.slvx" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib\iptest" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib\iptest\assert_util.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib\iptest\cominterop_util.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib\iptest\console_util.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib\iptest\file_util.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib\iptest\misc_util.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib\iptest\process_util.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib\iptest\runner.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib\iptest\test_env.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib\iptest\type_util.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib\iptest\util.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib\iptest\warning_util.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib\iptest\__init__.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib\runpy.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib\site.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Lib\__future__.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Microsoft.Dynamic.dll" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Microsoft.Dynamic.pdb" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.Debugging.dll" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.Debugging.pdb" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.dll" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.pdb" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.Silverlight.dll" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.Silverlight.pdb" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.slvx" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\Microsoft.Scripting.xml" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\mscorlib.dll" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\System.Core.dll" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\System.dll" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\System.Net.dll" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\dlr\System.Numerics.dll" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\webcam-mic.sln" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\webcam-mic.suo" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\webcam-mic.xaml" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\webcam_mic.html" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\webcam_mic.html" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\webcam_mic.py" />
+    <None Include="C:\Users\jimmysch\dev\pycon2010\webcam-mic\webcam_mic.py" />
+    <None Include="webcam_mic.html" />
+    <None Include="webcam_mic.py" />
+  </ItemGroup>
+</Project>

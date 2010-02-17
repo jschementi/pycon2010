@@ -1,0 +1,5 @@
+import System
+def say_ouch(s, e):
+  s.innerHTML = "Ouch!"
+ 
+document.message.onclick += say_ouch
