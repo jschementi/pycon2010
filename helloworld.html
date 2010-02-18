@@ -10,14 +10,9 @@
   </head>
   <body>
     <div id="message" style="font-size: 24px">Loading ...</div>
-    <script type="text/python" src="repl.py"></script>
+    <!--<script type="text/python" src="repl.py"></script>-->
     <script type="text/python">
-      document.message.innerHTML = "Hello from Python!"
-      
-      def say_ouch(s, e):
-        s.innerHTML = "<strike>%s</strike> ... <b>Ouch!</b>" % s.innerHTML
-
-      document.message.onclick += say_ouch
+      document.message.innerHTML = "Hello from Python!"  
     </script>
   </body>
 </html>

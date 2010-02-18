@@ -5,44 +5,42 @@
     //DLR.settings = {debug: true}
   </script>
   <script src="bin3/dlr.js" type="text/javascript"></script>
-  <script defer="true" type="text/python" src="repl.py"></script>
+  <script type="text/python" src="repl.py" defer="true"></script>
   <title>unittest</title>
 </head>
 <body>
-  <!--<script defer="true" type="text/python" src="Lib/__future__.py"></script>
-  <script defer="true" type="text/python" src="Lib/_abcoll.py"></script>
-  <script defer="true" type="text/python" src="Lib/abc.py"></script> 
-  <script defer="true" type="text/python" src="Lib/genericpath.py"></script>
-  <script defer="true" type="text/python" src="Lib/getopt.py"></script> 
-  <script defer="true" type="text/python" src="Lib/linecache.py"></script>        
-  <script defer="true" type="text/python" src="Lib/ntpath.py"></script>
-  <script defer="true" type="text/python" src="Lib/os.py"></script>
-  <script defer="true" type="text/python" src="Lib/random.py"></script>
-  <script defer="true" type="text/python" src="Lib/stat.py"></script>
-  <script defer="true" type="text/python" src="Lib/traceback.py"></script>
-  <script defer="true" type="text/python" src="Lib/types.py"></script>
-  <script defer="true" type="text/python" src="Lib/unittest.py"></script>
-  <script defer="true" type="text/python" src="Lib/UserDict.py"></script>
-  <script defer="true" type="text/python" src="Lib/warnings.py"></script>-->
-
   <script type="application/x-zip-compressed" src="Lib.zip"></script>
 
+  <div id="message" style="font-size: 24px">Loading ...</div>
   <script type="text/python">
-    import sys
-    sys.path.append("Lib")
-    import repl
-    repl.show()
+    document.message.innerHTML = "Hello from Python!"  
+
+    def say_ouch(s, e):
+      s.innerHTML = "Ouch!"
+     
+    document.message.onclick += say_ouch
   </script>
 
-  <script type="text/python" src="test_sequence_functions.py" defer='true'></script>
-  
   <script type="text/python">
-    import unittest
-    import test_sequence_functions
-    
-    suite = unittest.TestLoader().loadTestsFromTestCase(test_sequence_functions.TestSequenceFunctions)
-    unittest.TextTestRunner(verbosity=2).run(suite)
-    # unittest.main(test_sequence_functions)
+    if document.QueryString.ContainsKey("test"):
+      import sys
+      sys.path.append("Lib")
+
+      import repl
+      repl.show()
+      
+      import unittest
+
+      class TestHello(unittest.TestCase):
+        def testgreeting(self):
+          self.assertEqual(document.message.innerHTML, "Hello from Python!")
+
+        def testsayouch(self):
+          say_ouch(document.message, None)
+          self.assertEqual(document.message.innerHTML, "Ouch!")
+
+      suite = unittest.TestLoader().loadTestsFromTestCase(TestHello)
+      unittest.TextTestRunner().run(suite)
   </script>
 </body>
 </html>

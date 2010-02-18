@@ -37,7 +37,7 @@ def show():
 
 if document.QueryString.ContainsKey('console'): 
   prepl = show()
-  if document.QueryString['console'] == 'off':
+  if document.QueryString['console'] == 'hide':
     prepl.hide_all_panels()
   else:
     prepl.show_ironpython()

@@ -1,3 +1,5 @@
+<script type="text/python" src="repl.py"></script>
+
 import System
 def say_ouch(s, e):
   s.innerHTML = "Ouch!"
