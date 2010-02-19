@@ -1,3 +1,4 @@
+<!-- from http://gui-at.blogspot.com/2009/11/inotifypropertychanged-and-databinding.html -->
 <html>
 <head>
     <style type="text/css">
@@ -12,77 +13,39 @@
     <script type="text/python" src="repl.py" class="xaml" defer="true"></script>
     <script type="text/python" src="clrtype.py" class="xaml" defer="true"></script>
     <script type="text/python" src="pyevent.py" class="xaml" defer="true"></script>
+    <script type="text/python" src="notify_property.py" class="xaml" defer="true"></script>
     <title>databinding</title>
 </head>
 <body>
-    <script type="application/xml+xaml" id="xaml" width="100%" height="25" defer="true">
+    <script type="application/xml+xaml" id="xaml" width="100%" height="400" defer="true">
         <UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-            <StackPanel x:Name="DataPanel" Orientation="Horizontal">
-                <TextBlock Text="Size" />
-                <TextBlock Text="{Binding size}" />
-                <TextBox x:Name="tbSize" Text="{Binding size, Mode=TwoWay}" />
-                <Button x:Name="Button" Content="Set Initial Value" />
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     Width="Auto" Height="Auto"
+                     VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+            <StackPanel x:Name="DataPanel" Orientation="Vertical" Width="400" Height="400">
+              <StackPanel Orientation="Horizontal">
+                <TextBlock Text="_vm.Size = " FontSize="24"/>
+                <TextBlock Text="{Binding size}" FontSize="24"/>
+              </StackPanel>
+              <StackPanel Orientation="Horizontal">
+                <TextBlock Text="_vm.Size = " FontSize="24" />
+                <TextBox x:Name="tbSize" Text="{Binding size, Mode=TwoWay}" FontSize="24"/>
+              </StackPanel>
+              <StackPanel Orientation="Horizontal">
+                <Button x:Name="Button" Content="Reset" FontSize="24" />
+              </StackPanel>
             </StackPanel>
         </UserControl>
     </script>
 
+    <script type="text/python" class="xaml">
+      import repl
+      repl.show()
+    </script>
 
     <script type="text/python" class="xaml">
         import clrtype
-        import pyevent
-        from System.Windows import Application
-        from System.Windows.Controls import UserControl
-        from System.ComponentModel import INotifyPropertyChanged, PropertyChangedEventArgs
-
-        import sys
-        import repl
-        repl.show()
-
-        class NotifyPropertyChangedBase(INotifyPropertyChanged):
-            PropertyChanged = None
-
-            def __init__(self):
-                self.PropertyChanged, self._propertyChangedCaller = pyevent.make_event()
-
-            def add_PropertyChanged(self, value):
-                self.PropertyChanged += value
-
-            def remove_PropertyChanged(self, value):
-                self.PropertyChanged -= value
-
-            def OnPropertyChanged(self, propertyName):
-                if self.PropertyChanged is not None:
-                    self._propertyChangedCaller(self, PropertyChangedEventArgs(propertyName))
-
-        class notify_property(property):
-
-            def __init__(self, getter):
-                def newgetter(slf):
-                    #return None when the property does not exist yet
-                    try:
-                        return getter(slf)
-                    except AttributeError:
-                        return None
-                getter = clrtype.accepts()(getter)
-                clrtype.propagate_attributes(getter, newgetter)
-                super(notify_property, self).__init__(newgetter)
-
-            def setter(self, setter):
-                def newsetter(slf, newvalue):
-                    # do not change value if the new value is the same
-                    # trigger PropertyChanged event when value changes
-                    oldvalue = self.fget(slf)
-                    if oldvalue != newvalue:
-                        setter(slf, newvalue)
-                        slf.OnPropertyChanged(setter.__name__)
-                setter = clrtype.returns()(setter)
-                clrtype.propagate_attributes(setter, newsetter)
-                return property(
-                    fget=self.fget,
-                    fset=newsetter,
-                    fdel=self.fdel,
-                    doc=self.__doc__)
+        from notify_property import NotifyPropertyChangedBase, notify_property
 
         class ViewModel(NotifyPropertyChangedBase):
             __metaclass__ = clrtype.ClrClass
@@ -110,8 +73,8 @@
             # must be string to two-way binding work correctly
             _vm.size = '10'
 
-        root = Application.Current.LoadRootVisualFromString(
-                   document.xaml.innerHTML)
+        from System.Windows import Application
+        root = Application.Current.LoadRootVisualFromString(document.xaml.innerHTML)
         root.DataPanel.DataContext = _vm
         root.Button.Click += OnClick
     </script>

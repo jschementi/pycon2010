@@ -2,10 +2,10 @@
 <head>
   <title>Python - XAML</title>
   <script type="text/javascript">
-    window.DLR = {}
-    DLR.path = "bin"
+    window.DLR = {path: "bin3"}
+    DLR.settings = {windowless: 'true'}
   </script>
-  <script src="bin/dlr.js"
+  <script src="bin3/dlr.js"
           type="text/javascript"></script>
 </head>
 <body>
@@ -14,9 +14,9 @@
       <TextBlock Name="loading" Text="Loading ..." FontSize="24" />
     </Canvas>
   </script>
-  <script src="repl.py" id="xaml"></script>
   <script type="text/python" class="xaml">
     xaml.loading.Text = "Hello from Python!"
   </script>
+  <script src="repl.py" class="xaml"></script>
 </body>
 </html>

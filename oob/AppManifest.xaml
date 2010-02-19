@@ -1,30 +1,21 @@
-<Deployment 
-  xmlns="http://schemas.microsoft.com/client/2007/deployment"
-  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-  RuntimeVersion="4.0.50205.0"
-  EntryPointAssembly="Microsoft.Scripting.Silverlight"
-  EntryPointType="Microsoft.Scripting.Silverlight.DynamicApplication"
->
-  
+<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" RuntimeVersion="2.0.31005.0" EntryPointAssembly="Microsoft.Scripting.Silverlight" EntryPointType="Microsoft.Scripting.Silverlight.DynamicApplication" ExternalCallersFromCrossDomain="ScriptableOnly">
+  <!-- Add assembly references here -->
   <Deployment.Parts>
     <AssemblyPart Source="Microsoft.Scripting.Silverlight.dll" />
+    <AssemblyPart Source="Microsoft.Scripting.ExtensionAttribute.dll" />
+    <AssemblyPart Source="Microsoft.Scripting.Core.dll" />
     <AssemblyPart Source="Microsoft.Scripting.dll" />
     <AssemblyPart Source="Microsoft.Dynamic.dll" />
-    <AssemblyPart Source="System.Numerics.dll" />
     <AssemblyPart Source="IronPython.dll" />
     <AssemblyPart Source="IronPython.Modules.dll" />
   </Deployment.Parts>
-
-  <Deployment.ExternalParts>
-  </Deployment.ExternalParts>
-  
   <Deployment.OutOfBrowserSettings>
-    <OutOfBrowserSettings ShortName="Python Application" EnableGPUAcceleration="True" ShowInstallMenuItem="True">
-      <OutOfBrowserSettings.Blurb>Python on your desktop; at home, at work or on the go.</OutOfBrowserSettings.Blurb>
-      <OutOfBrowserSettings.WindowSettings>
-        <WindowSettings Title="Python Application" />
-      </OutOfBrowserSettings.WindowSettings>
+    <OutOfBrowserSettings ShortName="DLR Application" EnableGPUAcceleration="True" ShowInstallMenuItem="True">
+      <OutOfBrowserSettings.Blurb>DLR Application</OutOfBrowserSettings.Blurb>
       <OutOfBrowserSettings.Icons />
+      <OutOfBrowserSettings.WindowSettings>
+        <WindowSettings Title="DLR Application" Height="480" Width="640" />
+      </OutOfBrowserSettings.WindowSettings>
     </OutOfBrowserSettings>
   </Deployment.OutOfBrowserSettings>
 </Deployment>

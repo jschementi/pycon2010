@@ -3,7 +3,7 @@
     <Canvas.Clip>
       <RectangleGeometry Rect="0,0,600,400"></RectangleGeometry>
     </Canvas.Clip>
-    <Image Width="600" Height="400" Source="../samples/trigonometry/images/bkg.png"></Image>
+    <Image Width="600" Height="400" Source="../trigonometry/images/bkg.png"></Image>
     <Image Width="600" Height="400" x:Name="bkg" Canvas.Left="-20" Canvas.Top="-20" Opacity="0.0" Stretch="Fill" Source="../samples/trigonometry/images/bkg.png">
       <Image.RenderTransform>
         <ScaleTransform x:Name="bkgScale" CenterX="300" CenterY="200" ScaleX="1.2" ScaleY="1.2"></ScaleTransform>
