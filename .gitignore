@@ -2,3 +2,5 @@
 *.dll
 bin3/Lib
 bin/Lib
+*.suo
+unused

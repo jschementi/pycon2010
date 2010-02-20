@@ -47,7 +47,7 @@ class Mandelbrot(UserControl):
 
     def LoadComponent(self):
         print 'LoadComponent'
-        xaml = DynamicApplication.LoadComponentFromString(open("mandelbrot.xaml").read())
+        xaml = DynamicApplication.LoadComponentFromString(open("mandelbrot/mandelbrot.xaml").read())
         xaml.Loaded += self.UserControl_Loaded
         self.Content = xaml
 
