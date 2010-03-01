@@ -1,0 +1,1 @@
+python rst2xamlsl.py test.txt Silverlight\app\app.xaml

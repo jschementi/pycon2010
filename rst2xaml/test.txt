@@ -1,0 +1,120 @@
+============
+ Page Title
+============
+----------
+ Subtitle
+----------
+
+
+Heading 1
+=========
+
+| A line block
+| where newlines are preserved
+
+A paragraph with *italic* and **bold** and an ``inline literal``.
+
+    This is a blockquote.
+
+    So is this.
+
+Heading 2
+---------
+
+* A bullet list
+* The second item
+* The third item
+
+#. An enumerated list
+#. again
+#. again twice I say...
+
+Heading 3
+~~~~~~~~~
+
+This is a literal block::
+
+    import module
+    from othermodule import something
+    
+    MODULE_LEVEL_CONSTANT = 3
+    
+    def function(arg, arg2=None):
+        """A docstring."""
+        
+        # a comment
+        while arg:
+            arg -= 1
+        return arg2
+        
+Heading 4
+#########
+
+It looks much prettier rendered by pygments:
+
+.. code-block:: python
+
+    import module
+    from othermodule import something
+    
+    MODULE_LEVEL_CONSTANT = 3
+    
+    def function(arg, arg2=None):
+        """A docstring."""
+        
+        # a comment
+        while arg:
+            arg -= 1
+        return arg2
+        
+    
+    class ClassName(BaseClass):
+    
+        def __init__(self, arg):
+            # constructor
+            self.value = arg
+            if some_condition:
+                raise Exception('Ouch!!')
+
+    instance = ClassName('foo')
+
+Which can also do Ruby:
+
+.. code-block:: ruby
+
+    require "module"
+
+    module Namespace
+    
+        MODULE_LEVEL_CONSTANT = 3
+
+        def function(first, second)
+            # last expression evaluated is returned
+            first + second
+        end
+
+        class ClassName < BaseClass
+            attr_reader :value
+            def initialize(arg)
+                # constructor
+                @value = arg
+            end
+        end
+
+    end
+    
+    instance = Namespace::ClassName.new 'fish'
+    
+    
+Or even C#:
+
+
+.. code-block:: csharp
+
+    class Program
+    {
+        static void Main(string [] args)
+        {
+            Console.WriteLine("Hello, world");
+        }
+    }
