@@ -2,3 +2,7 @@
 *.suo
 installers
 unused
+bs3.bat
+elevate.bat
+install_sl3.bat
+install_sl4.bat
