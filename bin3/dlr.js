@@ -919,7 +919,7 @@ if(typeof DLR.autoAdd == 'undefined') {
 
 if(!DLR.path) {
   //DLR.path = null
-  DLR.path = "bin3"
+  DLR.path = "../dlr"
 }
 
 if (typeof HTMLElement != "undefined" && !HTMLElement.prototype.insertAdjacentElement) {
