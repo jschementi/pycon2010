@@ -1,3 +1,5 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
   <style type="text/css">
@@ -6,14 +8,19 @@
     #silverlightControlHost { height: 100%; text-align: center; }
   </style>
   <script type="text/javascript">
-    window.DLR = {autoAdd: false, settings: {windowless: 'true'}}
+    window.DLR = {settings: {windowless: 'true'}}
   </script>
-  <script type="text/javascript" src="bin3/dlr.js"></script>
+  <script type="text/javascript" src="ironpython/dlr.js"></script>
   <script type="text/python" src="repl.py" class="xaml"></script>
   <title>webcam-mic</title>
 </head>
 <body>
-  <script type="application/xml+xaml" src="webcam-mic/webcam-mic.xaml" id="xaml" width="100%" height="100%"></script>
+  <script type="application/xml+xaml" src="webcam-mic/webcam-mic.xaml" id="xaml" width="100%" height="100%" defer='true'></script>
+  <script type="application/python" class="xaml">
+    from Microsoft.Scripting.Silverlight.DynamicApplication import LoadComponentFromString
+    from System.Windows import Application
+    Application.Current.RootVisual = LoadComponentFromString(open('webcam-mic/webcam-mic.xaml').read())
+  </script>
   <script type="application/python" src="webcam-mic/webcam_mic.py" class="xaml"></script>
 </body>
 </html>

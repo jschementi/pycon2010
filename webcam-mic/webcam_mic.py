@@ -24,18 +24,27 @@ def CaptureButton_Click(sender, e):
     if CaptureDeviceConfiguration.AllowedDeviceAccess or CaptureDeviceConfiguration.RequestDeviceAccess():
       _CaptureSource.Start()
 
+
 def StopCapture_Click(sender, e):
   if _CaptureSource is not None:
     _CaptureSource.Stop()
 
 def TakeSnapshot_Click(sender, e):
   if _CaptureSource is not None and _CaptureSource.State == CaptureState.Started:
-    _CaptureSource.CaptureImageAsync();
+    # works on Silverlight 4 Beta
+    _CaptureSource.AsyncCaptureImage(OnCaptureImage)
+    # works on Silverlight 4 RC
+    # _CaptureSource.CaptureImageAsync();
   else:
     window.Alert("Camera must be stared first")
 
-def OnCaptureImage(s, e):
-  _Images.Add(e.Result)
+# works on Silverlight 4 RC
+# def OnCaptureImage(s, e):
+#  _Images.Add(e.Result)
+
+# works on Silverlight 4 Beta
+def OnCaptureImage(bitmap):
+  _Images.Add(bitmap)
 
 xaml = Application.Current.RootVisual
 xaml.CaptureButton.Click += CaptureButton_Click
@@ -50,7 +59,9 @@ xaml.VideoSources.ItemsSource = CaptureDeviceConfiguration.GetAvailableVideoCapt
 
 # creating a new capture source
 _CaptureSource = CaptureSource()
-_CaptureSource.CaptureImageCompleted += OnCaptureImage
+
+# works on Silverlight 4 RC
+#_CaptureSource.CaptureImageCompleted += OnCaptureImage
 
 # bind snapshot images
 xaml.Snapshots.ItemsSource = _Images
