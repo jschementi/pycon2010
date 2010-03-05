@@ -6,10 +6,11 @@
     #silverlightControlHost { height: 100%; text-align: center; }
   </style>
   <script type="text/javascript">
-    window.DLR = { path: "bin3" }
-    DLR.settings = { windowless: 'true', EnableGPUAcceleration: 'true', background: "black" }
+    window.DLR = { settings: {
+      windowless: 'true', EnableGPUAcceleration: 'true', background: "black"
+    }}
   </script>
-  <script src="bin3/dlr.js" type="text/javascript"></script>
+  <script src="ironpython/dlr.js" type="text/javascript"></script>
   <script type="text/python" src="repl.py" class="xaml"></script>
   <title>mandelbrot</title>
 </head>

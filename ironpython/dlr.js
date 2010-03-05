@@ -918,8 +918,7 @@ if(typeof DLR.autoAdd == 'undefined') {
 }
 
 if(!DLR.path) {
-  //DLR.path = null
-  DLR.path = "../dlr"
+  DLR.path = "ironpython"
 }
 
 if (typeof HTMLElement != "undefined" && !HTMLElement.prototype.insertAdjacentElement) {
